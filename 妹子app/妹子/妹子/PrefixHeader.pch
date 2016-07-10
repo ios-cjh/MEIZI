@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  妹子
+//
+//  Created by cjj on 16/6/28.
+//  Copyright © 2016年 jh. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define JHScreenWidth [UIScreen mainScreen].bounds.size.width
+#define JHScreenHight [UIScreen mainScreen].bounds.size.height
+
+
+//设置颜色
+#define MNRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//颜色
+#define LineColor UIColorFromRGB(0xFFDFDFDF)       //线的颜色
+#define GankMainColor UIColorFromRGB(0xFF00bb9c)       //主题色
+#define GankTabBarGrayColor UIColorFromRGB(0xFFa9b7b7)       //主题色
+
+
+// 随机色
+#define JHRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+#import "UIView+Additions.h"
+#import "JHStatusBarViewController.h"
+
+#import "UIView+Extension.h"
+
+
+#endif /* PrefixHeader_pch */
