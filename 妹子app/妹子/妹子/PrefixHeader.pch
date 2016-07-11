@@ -29,6 +29,7 @@
 #import "JHStatusBarViewController.h"
 
 #import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
 
 
 #endif /* PrefixHeader_pch */

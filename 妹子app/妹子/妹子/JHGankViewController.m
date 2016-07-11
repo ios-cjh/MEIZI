@@ -25,24 +25,16 @@
 
 
 @implementation JHGankViewController
-// lazy init
--(UIScrollView *)contentScrollView
-{
-    if (_contentScrollView == nil) {
-        _contentScrollView.pagingEnabled = YES;
-    }
-    return _contentScrollView;
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 不自动调整inset
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
-
+    
+    
     self.contentScrollView.delegate = self;
-    self.contentScrollView.bounces = YES;
+    self.contentScrollView.bounces = NO;
+    self.contentScrollView.pagingEnabled = YES;
     self.contentScrollView.showsVerticalScrollIndicator = NO;
     self.contentScrollView.showsHorizontalScrollIndicator = NO;
     
@@ -54,6 +46,9 @@
     
     // 初始化标题
     [self setupTitleLabel];
+    
+    // 默认选择第一个
+    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
 }
 
 
@@ -213,12 +208,10 @@
     // 取出子控制器
     UIViewController *vc = self.childViewControllers[index];
     
-    
     // 当前控制器已经显示过了
     if ([vc isViewLoaded]) {
         NSLog(@"当前控制器已经显示过了---");
         return;
-        
     }
     
     vc.view.frame = CGRectMake(scrollView.contentOffset.x, 0, scrollView.frame.size.width, scrollView.frame.size.height);

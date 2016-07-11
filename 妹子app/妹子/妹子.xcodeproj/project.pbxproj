@@ -139,6 +139,9 @@
 		07E5A6EE1D2FF8180041F4EE /* JHGankBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A6ED1D2FF8180041F4EE /* JHGankBaseController.m */; };
 		07E5A6FB1D3006A90041F4EE /* JHGankBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A6F91D3006A90041F4EE /* JHGankBaseCell.m */; };
 		07E5A6FC1D3006A90041F4EE /* JHGankBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E5A6FA1D3006A90041F4EE /* JHGankBaseCell.xib */; };
+		07EB4C981D33D63000827AC8 /* JHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB4C961D33D63000827AC8 /* JHWebViewController.m */; };
+		07EB4C991D33D63000827AC8 /* JHWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07EB4C971D33D63000827AC8 /* JHWebViewController.xib */; };
+		07EB4C9F1D33DF5200827AC8 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB4C9E1D33DF5200827AC8 /* UIBarButtonItem+Extension.m */; };
 		07FAEE691D2270E50055CDDE /* JHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FAEE681D2270E50055CDDE /* JHTabBarController.m */; };
 		07FAEE751D227EDB0055CDDE /* JHOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FAEE731D227EDB0055CDDE /* JHOtherViewController.m */; };
 		07FAEE761D227EDB0055CDDE /* JHOtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FAEE741D227EDB0055CDDE /* JHOtherViewController.xib */; };
@@ -423,6 +426,11 @@
 		07E5A6F81D3006A90041F4EE /* JHGankBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGankBaseCell.h; sourceTree = "<group>"; };
 		07E5A6F91D3006A90041F4EE /* JHGankBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGankBaseCell.m; sourceTree = "<group>"; };
 		07E5A6FA1D3006A90041F4EE /* JHGankBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHGankBaseCell.xib; sourceTree = "<group>"; };
+		07EB4C951D33D63000827AC8 /* JHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWebViewController.h; sourceTree = "<group>"; };
+		07EB4C961D33D63000827AC8 /* JHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWebViewController.m; sourceTree = "<group>"; };
+		07EB4C971D33D63000827AC8 /* JHWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHWebViewController.xib; sourceTree = "<group>"; };
+		07EB4C9D1D33DF5200827AC8 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		07EB4C9E1D33DF5200827AC8 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		07FAEE671D2270E50055CDDE /* JHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTabBarController.h; sourceTree = "<group>"; };
 		07FAEE681D2270E50055CDDE /* JHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTabBarController.m; sourceTree = "<group>"; };
 		07FAEE721D227EDB0055CDDE /* JHOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOtherViewController.h; sourceTree = "<group>"; };
@@ -771,6 +779,8 @@
 				07A096271D27CB7B00DC2B72 /* UIView+Extension.m */,
 				075CBDD31D22B63900F8DEA0 /* UIView+Additions.h */,
 				075CBDD41D22B63900F8DEA0 /* UIView+Additions.m */,
+				07EB4C9D1D33DF5200827AC8 /* UIBarButtonItem+Extension.h */,
+				07EB4C9E1D33DF5200827AC8 /* UIBarButtonItem+Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -1204,8 +1214,6 @@
 		07F834661D2E49A100FFAE68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				07E5A6EC1D2FF8180041F4EE /* JHGankBaseController.h */,
-				07E5A6ED1D2FF8180041F4EE /* JHGankBaseController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1272,6 +1280,11 @@
 		07FAEE6D1D227DA80055CDDE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				07EB4C951D33D63000827AC8 /* JHWebViewController.h */,
+				07EB4C961D33D63000827AC8 /* JHWebViewController.m */,
+				07EB4C971D33D63000827AC8 /* JHWebViewController.xib */,
+				07E5A6EC1D2FF8180041F4EE /* JHGankBaseController.h */,
+				07E5A6ED1D2FF8180041F4EE /* JHGankBaseController.m */,
 				07FAEE771D227F030055CDDE /* JHGankViewController.h */,
 				07FAEE781D227F030055CDDE /* JHGankViewController.m */,
 				07FAEE791D227F030055CDDE /* JHGankViewController.xib */,
@@ -1395,6 +1408,7 @@
 				075CBDCF1D22B29C00F8DEA0 /* grayLogo@2x.png in Resources */,
 				07A096971D27CDC600DC2B72 /* SVProgressHUD.bundle in Resources */,
 				075CBDD11D22B29C00F8DEA0 /* redLogo@2x.png in Resources */,
+				07EB4C991D33D63000827AC8 /* JHWebViewController.xib in Resources */,
 				0729B9F91D1FB25800DB9519 /* LaunchScreen.storyboard in Resources */,
 				07FAEE761D227EDB0055CDDE /* JHOtherViewController.xib in Resources */,
 				075CBDC41D22B26D00F8DEA0 /* MJRefresh.bundle in Resources */,
@@ -1493,6 +1507,7 @@
 				07FAEE7F1D227F200055CDDE /* JHGirlViewController.m in Sources */,
 				075CBDBA1D22B26D00F8DEA0 /* MJRefreshHeader.m in Sources */,
 				07A096921D27CDC600DC2B72 /* UIButton+SD.m in Sources */,
+				07EB4C981D33D63000827AC8 /* JHWebViewController.m in Sources */,
 				075CBDC71D22B26D00F8DEA0 /* UIScrollView+MJRefresh.m in Sources */,
 				075CBDBF1D22B26D00F8DEA0 /* MJRefreshBackNormalFooter.m in Sources */,
 				07A096991D27CDC600DC2B72 /* LFRoundProgressView.m in Sources */,
@@ -1518,6 +1533,7 @@
 				07A096191D27C73500DC2B72 /* PBConst.m in Sources */,
 				07A096961D27CDC600DC2B72 /* SVIndefiniteAnimatedView.m in Sources */,
 				0729BA941D1FB3CC00DB9519 /* UIImage+WebP.m in Sources */,
+				07EB4C9F1D33DF5200827AC8 /* UIBarButtonItem+Extension.m in Sources */,
 				076336201D23C75200AE6C3B /* JHGank.m in Sources */,
 				0729BA8B1D1FB3CC00DB9519 /* SDWebImageCompat.m in Sources */,
 				075CBDC21D22B26D00F8DEA0 /* MJRefreshNormalHeader.m in Sources */,
@@ -1683,7 +1699,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/cjj/Desktop/妹子app/妹子/妹子/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/cjj/Documents/第三个项目/MEIZI/妹子app/妹子/妹子/PrefixHeader.pch";
 				INFOPLIST_FILE = "妹子/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1696,7 +1712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/cjj/Desktop/妹子app/妹子/妹子/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/cjj/Documents/第三个项目/MEIZI/妹子app/妹子/妹子/PrefixHeader.pch";
 				INFOPLIST_FILE = "妹子/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

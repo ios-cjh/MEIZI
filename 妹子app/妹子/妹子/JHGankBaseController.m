@@ -14,6 +14,7 @@
 #import "MJExtension.h"
 #import "JHGank.h"
 #import "JHGankBaseCell.h"
+#import "JHWebViewController.h"
 
 /**
  *  每页加载的大小
@@ -60,7 +61,7 @@ static NSString *ID = @"cell";
     
     // 初始化刷新控件
     [self setupRefresh];
-
+    
 }
 /**
  * 初始化刷新控件
@@ -185,7 +186,6 @@ static NSString *ID = @"cell";
         [self.tableView.header endRefreshing];
         [JHNetworkTool showNetWorkActivityIndicator:NO];
     }];
-
 }
 
 
@@ -200,7 +200,7 @@ static NSString *ID = @"cell";
     
     // 不要分割线
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.backgroundColor = [UIColor clearColor];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -221,8 +221,18 @@ static NSString *ID = @"cell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     JHGankBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    // 去掉默认选中效果
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    // 传递模型数组
     cell.gank = self.gankDatas[indexPath.row];
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    JHWebViewController *webViewVc = [[JHWebViewController alloc] init];
+    webViewVc.gank = self.gankDatas[indexPath.row];
+    webViewVc.title = @"网页";
+    [self.navigationController pushViewController:webViewVc animated:YES];
+}
 @end

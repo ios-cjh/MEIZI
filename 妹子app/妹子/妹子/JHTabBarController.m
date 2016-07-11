@@ -34,11 +34,10 @@
  */
 -(void)setTabbar
 {
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:0.8];
-    [self.view insertSubview:view atIndex:0];
-    view.opaque = YES;
-    
+    UIView *bg = [[UIView alloc] initWithFrame:self.tabBar.bounds];
+    bg.backgroundColor = [UIColor colorWithWhite:0.950 alpha:0.8];
+    [self.tabBar insertSubview:bg atIndex:0];
+    self.tabBar.opaque = YES;
 }
 
 /**
