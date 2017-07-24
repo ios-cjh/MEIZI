@@ -39,7 +39,7 @@
     if(self.childViewControllers.count > 0){
         //添加返回按钮
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backBtn setTitle:@"返回" forState:UIControlStateNormal];
+        [backBtn setTitle:@"-返回" forState:UIControlStateNormal];
         [backBtn setTitleColor:GankMainColor forState:UIControlStateNormal];
         [backBtn setTitleColor:[UIColor colorWithRed:0.000 green:0.613 blue:0.515 alpha:1.000] forState:UIControlStateHighlighted];
         [backBtn setImage:[UIImage imageNamed:@"comment_back"] forState:UIControlStateNormal];
